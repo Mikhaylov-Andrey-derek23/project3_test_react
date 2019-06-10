@@ -1,7 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Router, Link} from 'react-router-dom';
-
+import CardsGood from './CardsGood';
 import Selector from './Selector';
+
 class Goods_card extends React.Component{
     render(){
         return(
@@ -12,7 +13,7 @@ class Goods_card extends React.Component{
                 <h1>{this.props.tagName}</h1>
                 <p>Все товары</p>
                 <Selector/>
-                {/* <CardsGood/> */}
+                <CardsGood/>
             </div>
         )
     }

@@ -11,7 +11,7 @@ class Catolog extends React.Component{
 
     }
     componentDidMount(){
-        const nameLink =  {women: 'Женщины', men : 'Мужчины', children : "Дети", new:'Новинки'}
+        const nameLink =  {women: 'Женщины', men : 'Мужчины', childer : "Дети", new:'Новинки'}
         this.setState({
            name : nameLink[this.props.match.params.name]
         })
@@ -21,7 +21,6 @@ class Catolog extends React.Component{
     render(){
         return(
             <div className="wrapper">
-e
                 <Goods_card tagName={this.state.name}/>
             </div>
         )

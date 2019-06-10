@@ -207,6 +207,7 @@ body {
 .goodsCard {
   width: 90%;
   margin: 0 auto;
+  margin-top: -31px;
 }
 
 .goodsCard .tag {

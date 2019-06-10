@@ -8,7 +8,7 @@ class Main extends React.Component{
                 <section className="headerMain">
                     <h1>новые поступление лета</h1>
                     <h3>Мы подготовили для Вас лучшие новинки сезона</h3>
-                    <Link to="catalog/new">Посмотреть новинки</Link>
+                    <Link to="/catolog/new">Посмотреть новинки</Link>
                 </section>  
                 <section className="advertisingLink">
                     <div className="advertisingLinkDiv">
