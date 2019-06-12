@@ -8,12 +8,12 @@ class App extends React.Component{
     render(){
         return(
             <BrowserRouter>
-                <Header/>
-                <Route exact path='/' component={Main}/>
-                <Route exact path='/catolog/:name' component={Catolog}/>
-
-
-            
+                <div className="wrapper">
+                    <Header/>
+                    <Route exact path='/' component={Main}/>
+                    <Route exact path='/catolog/:name' component={Catolog}/>
+                </div>
+                
             </BrowserRouter>
         )
         

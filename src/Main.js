@@ -4,7 +4,7 @@ import {BrowserRouter, Router, Link}  from  'react-router-dom';
 class Main extends React.Component{
     render(){
         return(
-            <div className="wrapper">
+            <div>
                 <section className="headerMain">
                     <h1>новые поступление лета</h1>
                     <h3>Мы подготовили для Вас лучшие новинки сезона</h3>
