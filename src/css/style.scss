@@ -149,7 +149,7 @@ body{
         .jeansJacket{
             display: flex;
             flex-direction: column;
-            height: 70%;
+            height: 590px;
             background-image: url('img/advertising/1.jpg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -160,13 +160,197 @@ body{
         }
         .accessories{
             display: block;
-            height: 30%;
+            height: 295px;
             background-image: url('img/advertising/5.jpg');
-            background-size: cover;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             background-position: center;
 
         }
+        .infoBlok{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #bbbbbb;
+            height: 295px;
+            font-size: 14px;
+            font-family: "Georgia";
+            line-height: 1.4;
+            color: rgb(255, 255, 255);
+            font-style: italic;
+            text-align: center;
+            .container{
+                width: 62%;
+                .logo{
+                    height: 35px;
+                    background-image: url('img/advertising/attention-sign-outline.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-bottom: 10px;
+                    position: relative;
+                    &:after{
+                        content: '';
+                        width: 23px;
+                        height: 2px;
+                        background-color: rgb(255, 255, 255);
+                        position: absolute;
+                        top: 15px;
+                        left: 40px;
+                    }
+                    &:before{
+                        content: '';
+                        width: 23px;
+                        height: 2px;
+                        background-color: rgb(255, 255, 255);
+                        position: absolute;
+                        top: 15px;
+                        right: 40px;
+                    }
+                }
+                
+            }
+        }
+        .pointerLink{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #606060;
+            height: 295px;
+            font-size: 24px;
+            font-family: "Myriad Pro";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            text-align: center;
+            p{
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    padding: 4px;
+                    border-left: 2px solid rgb(255, 255, 255);
+                    border-bottom: 2px solid rgb(255, 255, 255);
+                    transform: rotate(45deg);
+                    top: -78%;
+                    left: 42%;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 20%;
+                    height: 2px;
+                    background-color: rgb(255, 255, 255);
+                    top: -64%;
+                    left: 42%;
+                }
+            }
+        }
+        .jeans{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('img/advertising/2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 295px;
+            .description{
+                text-transform: uppercase;
+                margin-bottom : 10px;
+            }
+            .price{
+                text-transform: lowercase;
+            }
+        }
+        .shoots{
+            display: block;
+            background-image: url('img/advertising/3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 295px;
+        }
+        .sportClothes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('img/advertising/7.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 295px;
+            position: relative;
+            z-index: 1;
+            color: rgb(255, 255, 255);
+            .description{
+                text-transform: uppercase;
+                margin-bottom : 10px;
+                z-index: 2;
+            }
+            .price{
+                text-transform: lowercase;
+                z-index: 2;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #6060609c;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    .pointerLink2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #606060;
+        height: 295px;
+        font-size: 24px;
+        font-family: "Myriad Pro";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: center;
+        p{
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                padding: 4px;
+                border-left: 2px solid rgb(255, 255, 255);
+                border-bottom: 2px solid rgb(255, 255, 255);
+                transform: rotate(45deg);
+                top: -34%;
+                left: 42%;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 20%;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+                top: -30%;
+                left: 42%;
+            }
+        }
+        span{
+            font-style: italic;
+        }
+    }
+    .children{
+        display: flex;
+        flex-direction: column;
+        height: 590px;
+        background-image: url('img/advertising/4.jpg');
+        background-size: 100% 100%;;
+        background-repeat: no-repeat;
+        background-position: center;
+        div{
+            margin: auto auto;
+        } 
     }
 }
 .goodsCard{

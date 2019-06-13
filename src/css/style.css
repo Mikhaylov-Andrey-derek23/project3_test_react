@@ -184,7 +184,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 70%;
+  height: 590px;
   background-image: url("img/advertising/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -197,11 +197,258 @@ body {
 
 .advertisingLink .advertisingLinkDiv .accessories {
   display: block;
-  height: 30%;
+  height: 295px;
   background-image: url("img/advertising/5.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advertisingLink .advertisingLinkDiv .infoBlok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #bbbbbb;
+  height: 295px;
+  font-size: 14px;
+  font-family: "Georgia";
+  line-height: 1.4;
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+.advertisingLink .advertisingLinkDiv .infoBlok .container {
+  width: 62%;
+}
+
+.advertisingLink .advertisingLinkDiv .infoBlok .container .logo {
+  height: 35px;
+  background-image: url("img/advertising/attention-sign-outline.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.advertisingLink .advertisingLinkDiv .infoBlok .container .logo:after {
+  content: '';
+  width: 23px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.advertisingLink .advertisingLinkDiv .infoBlok .container .logo:before {
+  content: '';
+  width: 23px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+}
+
+.advertisingLink .advertisingLinkDiv .pointerLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #606060;
+  height: 295px;
+  font-size: 24px;
+  font-family: "Myriad Pro";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advertisingLink .advertisingLinkDiv .pointerLink p {
+  position: relative;
+}
+
+.advertisingLink .advertisingLinkDiv .pointerLink p:before {
+  content: '';
+  position: absolute;
+  padding: 4px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -78%;
+  left: 42%;
+}
+
+.advertisingLink .advertisingLinkDiv .pointerLink p:after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  background-color: white;
+  top: -64%;
+  left: 42%;
+}
+
+.advertisingLink .advertisingLinkDiv .jeans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("img/advertising/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 295px;
+}
+
+.advertisingLink .advertisingLinkDiv .jeans .description {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advertisingLink .advertisingLinkDiv .jeans .price {
+  text-transform: lowercase;
+}
+
+.advertisingLink .advertisingLinkDiv .shoots {
+  display: block;
+  background-image: url("img/advertising/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 295px;
+}
+
+.advertisingLink .advertisingLinkDiv .sportClothes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("img/advertising/7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 295px;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.advertisingLink .advertisingLinkDiv .sportClothes .description {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.advertisingLink .advertisingLinkDiv .sportClothes .price {
+  text-transform: lowercase;
+  z-index: 2;
+}
+
+.advertisingLink .advertisingLinkDiv .sportClothes::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #6060609c;
+  top: 0;
+  left: 0;
+}
+
+.advertisingLink .pointerLink2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #606060;
+  height: 295px;
+  font-size: 24px;
+  font-family: "Myriad Pro";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advertisingLink .pointerLink2 p {
+  position: relative;
+}
+
+.advertisingLink .pointerLink2 p:before {
+  content: '';
+  position: absolute;
+  padding: 4px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -34%;
+  left: 42%;
+}
+
+.advertisingLink .pointerLink2 p:after {
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 2px;
+  background-color: white;
+  top: -30%;
+  left: 42%;
+}
+
+.advertisingLink .pointerLink2 span {
+  font-style: italic;
+}
+
+.advertisingLink .children {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 590px;
+  background-image: url("img/advertising/4.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advertisingLink .children div {
+  margin: auto auto;
 }
 
 .goodsCard {
