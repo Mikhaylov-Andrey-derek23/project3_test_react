@@ -23,7 +23,7 @@ body {
 }
 
 .Navigation {
-  max-width: 1200px;
+  width: 96%;
   margin: 0 auto;
   padding: 20px 0;
   display: -webkit-box;
@@ -378,7 +378,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #6060609c;
+  background-color: #0000005c;
   top: 0;
   left: 0;
 }
@@ -449,6 +449,61 @@ body {
 
 .advertisingLink .children div {
   margin: auto auto;
+}
+
+.formEmail {
+  width: 96%;
+  margin: 245px auto;
+}
+
+.formEmail h2 {
+  font-size: 36px;
+  font-family: "Myriad Pro";
+  color: #303030;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.formEmail h3 {
+  font-size: 18px;
+  font-family: "Georgia";
+  color: #606060;
+  font-style: italic;
+  text-align: center;
+}
+
+.formEmail form {
+  width: 55%;
+  margin: 20px auto;
+}
+
+.formEmail form input {
+  width: 60%;
+  padding: 2%;
+}
+
+.formEmail form button {
+  width: 30%;
+  padding: 2%;
+  background-color: #f68236;
+  font-size: 14px;
+  font-family: "Myriad Pro";
+  color: white;
+}
+
+.formEmail form p {
+  font-size: 14px;
+  font-family: "Myriad Pro";
+  text-align: center;
+  margin-top: 10px;
+}
+
+.formEmail form .red {
+  color: #ed1c24;
+}
+
+.formEmail form .green {
+  color: green;
 }
 
 .goodsCard {
