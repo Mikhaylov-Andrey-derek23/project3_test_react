@@ -465,6 +465,25 @@ footer{
     width: 90%;
     margin: 0 auto;
     margin-top: -31px;
+
+    .breadCrumb{
+        margin: 50px auto;
+        width: 100%;
+        
+        a{
+            font-size: 12px;
+            font-family: "Myriad Pro";
+            color: rgb(96, 96, 96);
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 300ms;
+            margin: 0 10px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
     .tag{
         margin-top: 30px;
         margin-bottom: 75px;

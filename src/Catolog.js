@@ -1,7 +1,11 @@
 import React from 'react';
 import {BrowserRouter, Router, Link} from 'react-router-dom';
-import Goods_card from './Goods_card';
+import Goods_card from './Catolog/Goods_card';
+import Selector from './Catolog/Selector';
+import CardsGood from './Catolog/CardsGood';
+import BreadCrumb from './Catolog/BreadCrumb';
 const nameLink =  {women: 'Женщины', men : 'Мужчины', childer : "Дети", new:'Новинки'}
+
 
 class Catolog extends React.Component{
     constructor (props){
@@ -20,8 +24,12 @@ class Catolog extends React.Component{
 
     render(){
         return(
-            <div>
-                <Goods_card tagName={this.state.name}/>
+            <div className="goodsCard">
+                <BreadCrumb name={this.state.name}/>
+                <Selector/>
+                <CardsGood/>
+                {/* <Goods_card tagName={this.state.name}/> */}
+                
             </div>
         )
     }
