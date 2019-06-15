@@ -400,6 +400,67 @@ body{
         }
     } 
 }
+footer{
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    h2{
+        font-size: 14px;
+        font-family: "Myriad Pro";
+        color: rgb(48, 48, 48);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    a{
+        font-size: 12px;
+        font-family: "Myriad Pro";
+        color: rgb(48, 48, 48);
+        text-decoration: none;
+        margin-bottom: 15px;
+        &:hover{
+            text-decoration: underline; 
+        }
+    }
+    .catolog{
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        border-right: 2px solid #eaeaea;
+        
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        border-right: 2px solid #eaeaea;
+        
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        p{
+            font-size: 12px;
+            font-family: "Myriad Pro";
+            color: rgb(48, 48, 48);
+            margin-bottom:  15px;
+        }
+        .link{
+            display: flex;
+            width: 65%;
+            justify-content: space-between;
+            a{
+                display: block;
+                padding: 5px;
+                border: 1px solid rgb(96, 96, 96);
+                text-align: center;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
 .goodsCard{
     width: 90%;
     margin: 0 auto;

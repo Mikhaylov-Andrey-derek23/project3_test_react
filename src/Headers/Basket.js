@@ -21,7 +21,6 @@ class Basket extends React.Component{
                     // this.state.email = respon.email,
                     // this.orders = respon.orders
                 )
-                console.log(this.state)
             })
         }, 1)
     }

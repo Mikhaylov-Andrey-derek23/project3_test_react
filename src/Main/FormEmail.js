@@ -17,7 +17,6 @@ class  FormEmail extends React.Component{
             this.setState({
                 userEmail: respon.email,
             })
-            console.log(this.state)
         })
     }
 
