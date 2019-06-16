@@ -1,6 +1,8 @@
 {
     "data":[
         {
+            "size" : [48, 50, 52, 56],
+            "decription" : "Описание товара",
             "catolog" : "women",
             "id" : 0,
             "idName" : "jacket_blue", 
@@ -9,6 +11,8 @@
             "price": 5400
         },
         {
+            "size" : [48, 50, 52, 56],
+            "decription" : "Описание товара",
             "catolog" : "women",
             "id" : 1,
             "idName" : "leather_jacket", 
@@ -17,6 +21,8 @@
             "price": 22500
         },
         {
+            "size" : [48, 50, 52, 56],
+            "decription" : "Описание товара",
             "catolog" : "women",
             "id" : 2,
             "idName" : "jacket_pockets", 
@@ -25,6 +31,8 @@
             "price": 9200
         },
         {
+            "size" : [48, 50, 52, 56],
+            "decription" : "Описание товара",
             "catolog" : "children",
             "id" : 3,
             "idName" : "casual_jacket", 
@@ -33,6 +41,8 @@
             "price": 8800
         },
         {
+            "size" : [48, 50, 52, 56],
+            "decription" : "Описание товара",
             "catolog" : "children",
             "id" : 4,
             "idName" : "stylish leather jackett", 
@@ -41,6 +51,8 @@
             "price": 120000
         },
         {
+            "size" : [48, 50, 52, 56],
+            "decription" : "Описание товара",
             "catolog" : "men",
             "id" : 5,
             "idName" : "sneakers_gray", 
@@ -49,6 +61,8 @@
             "price": 2900
         },
         {
+            "size" : [48, 50, 52, 56],
+            "decription" : "Описание товара",
             "catolog" : "new",
             "id" : 6,
             "idName" : "sneakers_casul", 

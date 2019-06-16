@@ -16,7 +16,6 @@ class Catolog extends React.Component{
             return data.json()
         }).then(respon=>{
             respon.data.forEach(val => {
-                console.log(val.catolog)
                 if(val.catolog == 'women'){
                     const womenLength = this.state.women +1;
                     this.setState({

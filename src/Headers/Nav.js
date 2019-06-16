@@ -8,7 +8,7 @@ class Nav extends React.Component{
                     <Link className="logo" to="/">sh</Link>
                     <Link to="/catolog/women">Женщинам</Link>
                     <Link to="/catolog/men">Мужчинам</Link> 
-                    <Link to="/catolog/childer">Детям</Link> 
+                    <Link to="/catolog/children">Детям</Link> 
                     <Link to="/catolog/new">Новинки</Link>  
                     <Link to="/">О нас</Link>
             </div> 

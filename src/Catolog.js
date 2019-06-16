@@ -4,7 +4,7 @@ import Goods_card from './Catolog/Goods_card';
 import Selector from './Catolog/Selector';
 import CardsGood from './Catolog/CardsGood';
 import BreadCrumb from './Catolog/BreadCrumb';
-const nameLink =  {women: 'Женщины', men : 'Мужчины', childer : "Дети", new:'Новинки'}
+const nameLink =  {women: 'Женщины', men : 'Мужчины', children : "Дети", new:'Новинки'}
 
 
 class Catolog extends React.Component{
@@ -27,7 +27,7 @@ class Catolog extends React.Component{
             <div className="goodsCard">
                 <BreadCrumb name={this.state.name}/>
                 <Selector/>
-                <CardsGood/>
+                <CardsGood link={this.props.match.params.name}/>
                 {/* <Goods_card tagName={this.state.name}/> */}
                 
             </div>

@@ -51,7 +51,7 @@ class AdvertisingLink extends React.Component{
                         <div className="pointerLink2">
                             <p>Элегантная<br/> обувь <br/><span>ботинки, кросовки</span></p>
                         </div>
-                        <Link className="children" to="catolog/childer">
+                        <Link className="children" to="catolog/children">
                             <div>
                                 <p>Детская<br/>одежда</p>
                                 <p>New Arrival</p>

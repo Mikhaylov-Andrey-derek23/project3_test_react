@@ -13,18 +13,27 @@ class CardsGood extends React.Component{
     }
 
     componentDidMount(){
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', '/data.json');
-        xhr.send();
-        xhr.addEventListener('load', ()=>{
-            console.log('load');
-            const respon = JSON.parse(xhr.responseText);
-            this.setState({
-                data : respon.data
-
+        const link = this.props.link;
+        console.log(link)
+        fetch('/api/data.json').then(data=>{
+            return data.json()
+        }).then(respon=>{
+            // respon.data.forEach(el => {
+            //     console.log(el)
+            // });
+            respon.data.forEach(el =>{
+                if(el.catolog == link){
+                    const app = this.state.data
+                    app.push(el)
+                    this.setState({
+                        data : app
+        
+                    })
+                }
             })
-            console.log(this.state)
+            
         })
+     
     }
 
     render(){
@@ -32,7 +41,7 @@ class CardsGood extends React.Component{
             <div className="cardsGood">
                 {
                     this.state.data.map((item, key) =>
-                   <CardGood img={item.url_img} name={item.name} price={item.price} nameId={item.idName}/>
+                   <CardGood img={item.url_img} name={item.name} price={item.price} nameId={'/product/'+item.idName}/>
                  )
                 }
             </div>
