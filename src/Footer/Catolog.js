@@ -49,7 +49,7 @@ class Catolog extends React.Component{
                 <h2>Коллекция</h2>
                 <Link to="/catolog/women">Женщинам ({this.state.women})</Link>
                 <Link to="/catolog/men">Мужчинам ({this.state.men})</Link> 
-                <Link to="/catolog/childer">Детям ({this.state.children})</Link> 
+                <Link to="/catolog/children">Детям ({this.state.children})</Link> 
                 <Link to="/catolog/new">Новинки ({this.state.new})</Link>  
             </div>
         )

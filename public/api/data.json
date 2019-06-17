@@ -1,6 +1,7 @@
 {
     "data":[
         {
+            "count" : 1,
             "size" : [48, 50, 52, 56],
             "decription" : "Описание товара",
             "catolog" : "women",
@@ -11,6 +12,7 @@
             "price": 5400
         },
         {
+            "count" : 1,
             "size" : [48, 50, 52, 56],
             "decription" : "Описание товара",
             "catolog" : "women",
@@ -21,6 +23,7 @@
             "price": 22500
         },
         {
+            "count" : 1,
             "size" : [48, 50, 52, 56],
             "decription" : "Описание товара",
             "catolog" : "women",
@@ -31,6 +34,7 @@
             "price": 9200
         },
         {
+            "count" : 1,
             "size" : [48, 50, 52, 56],
             "decription" : "Описание товара",
             "catolog" : "children",
@@ -41,6 +45,7 @@
             "price": 8800
         },
         {
+            "count" : 1,
             "size" : [48, 50, 52, 56],
             "decription" : "Описание товара",
             "catolog" : "children",
@@ -51,6 +56,7 @@
             "price": 120000
         },
         {
+            "count" : 1,
             "size" : [48, 50, 52, 56],
             "decription" : "Описание товара",
             "catolog" : "men",
@@ -61,6 +67,7 @@
             "price": 2900
         },
         {
+            "count" : 1,
             "size" : [48, 50, 52, 56],
             "decription" : "Описание товара",
             "catolog" : "new",

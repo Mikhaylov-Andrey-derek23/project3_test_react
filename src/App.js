@@ -5,6 +5,7 @@ import Main from './Main';
 import Catolog from './Catolog';
 import Footer from './Footer';
 import Product from './Product';
+import Basket from './Basket';
 
 class App extends React.Component{
     render(){
@@ -15,6 +16,7 @@ class App extends React.Component{
                     <Route exact path='/' component={Main}/>
                     <Route exact path='/catolog/:name' component={Catolog}/>
                     <Route exact path='/product/:name' component={Product}/>
+                    <Route exact path= '/basket/:name' component={Basket}/>
                     <Footer/>
                 </div>
                 

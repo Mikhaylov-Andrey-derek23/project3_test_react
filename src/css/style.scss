@@ -626,6 +626,78 @@ footer{
     }
 }
 
+.basketUser{
+    margin: 100px auto;
+    h1{
+        font-size: 36px;
+        font-family: "Myriad Pro";
+        color: rgb(48, 48, 48);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2{
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: "Myriad Pro";
+        color: #6e6e6e;
+        text-align: center;
+    }
+    .table{
+        width: 96%;
+        margin: 0 auto;
+        .tr{
+            display: flex;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 0;
+            align-items: center;
+            .img{
+                width: 10%;
+            }
+            .name{
+                width: 40%;
+            }
+            .size{
+                width: 10%;
+            }
+            .count{
+                width: 10%;
+                display: flex;
+                align-items: center;
+                .countVal{
+                    font-size: 20px;
+                }
+                .fun{
+                    margin-left: 20px;
+                    .plus{
+                        font-size: 12px;
+                        color: rgb(255, 255, 255);
+                        background-color: #303030;
+                        padding: 5px 7px;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                    }
+                    .minus{
+                        font-size: 12px;
+                        color: rgb(255, 255, 255);
+                        background-color: #303030;
+                        padding: 5px 7px;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+            .price{
+                width: 20%;
+            }
+            .delet{
+                width: 5%;
+                text-align: center;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
 .paginator{
     width: 12%;
     margin: 30px auto;

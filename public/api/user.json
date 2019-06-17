@@ -1,21 +1,5 @@
 {
     "name" : "Slava",
     "email" : "slava@nordic.ru",
-    "orders" : [
-        {
-            "id" : 1
-        },
-        {
-            "id" : 2
-        },
-        {
-            "id" : 3
-        },
-        {
-            "id" : 4
-        },
-        {
-            "id" : 5
-        }
-    ]
+    "orders" : [1, 0]
 }
