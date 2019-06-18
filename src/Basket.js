@@ -6,7 +6,7 @@ class Basket extends React.Component{
         this.state = {
             user : [],
             product: [],
-            orders : []
+            orders : this.props.orders
         }
     }
     componentDidMount(){
@@ -16,18 +16,17 @@ class Basket extends React.Component{
         }).then(respon=>{
             this.setState({
                 user : respon
-                
-                
             })
               
         })
-        if(orders.length != -1){
+        if(orders.length > 0){
             this.setState({
                 orders : orders
             })
+            
         }
         
-        console.log(orders)
+        
         fetch('/api/data.json').then(data=>{
             return data.json()
         }).then(respon=>{
