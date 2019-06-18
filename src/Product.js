@@ -27,12 +27,12 @@ class Product extends React.Component{
         // {catolog: "men", id: 5, idName: "sneakers_gray", url_img: "https://static.dochkisinochki.ru/upload/img_loader/40/28/84/GL000479531mGS6545_001.jpg", 
         // name: "Кеды серые", …}
     }
-
+    
     render(){
         return(
             <div className="product">
                 <BreadCrumb parentName={nameLink[this.state.catolog]} link={'/product/'+this.props.match.params.name} parentLink={'/catolog/'+this.state.catolog} name={this.state.name}/>
-                <ItemCard img={this.state.url_img} id={this.state.id} price={this.state.price} decription={this.state.decription} size={this.state.size} linkBasket={'/basket/'+this.state.id} name={this.state.name}/>
+                <ItemCard img={this.state.url_img} id={this.state.id} price={this.state.price} decription={this.state.decription} size={this.state.size} linkBasket={'/basket/'+this.state.id} name={this.state.name} addId={this.props.addId}/>
             </div>
         )
     }

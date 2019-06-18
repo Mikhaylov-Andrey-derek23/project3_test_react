@@ -5,38 +5,35 @@ class Basket extends React.Component{
         super(props);
         this.state = {
             user : [],
-            product: []
+            product: [],
+            orders : []
         }
     }
     componentDidMount(){
+        let orders = this.props.orders       
         fetch('/api/user.json').then(data=>{
             return data.json()
         }).then(respon=>{
             this.setState({
                 user : respon
+                
+                
             })
-            if(this.props.match.params.name != 'null'){
-                let orders = this.state.user.orders;
-            for(let i = 0; i<orders.length; i++){
-                if(orders[i] == this.props.match.params.name){
-                    orders.splice(i, 1)
-                }
-            }
-           orders.push(parseInt(this.props.match.params.name))
-           this.setState({
-               user :{
-                orders : orders
-               }
-           })
-            }
-            
+              
         })
+        if(orders.length != -1){
+            this.setState({
+                orders : orders
+            })
+        }
+        
+        console.log(orders)
         fetch('/api/data.json').then(data=>{
             return data.json()
         }).then(respon=>{
             let res = [];
             respon.data.forEach(el=>{
-                this.state.user.orders.forEach(val=>{
+                this.state.orders.forEach(val=>{
                     if(el.id == val){
                         res.push(el)
                     }
@@ -85,6 +82,14 @@ class Basket extends React.Component{
         this.setState({
             product : product
         })
+        let orders = this.state.orders
+        for(let i = 0; i<orders.length; i++){
+            if(orders[i] == a.el.id){
+                orders.splice(i, 1)
+            }
+        }
+        this.props.removeProduct(orders);
+
     }
 
     render(){

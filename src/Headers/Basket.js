@@ -30,7 +30,7 @@ class Basket extends React.Component{
             <div className="basket_component">
                 <div className="user">Привет, {this.state.name} (<Link to="/out">Выйти</Link>)</div>
                 
-                <Link className="basket" to="/basket/null">Корзина ({this.state.orders.length >0 ? this.state.orders.length : '0'})</Link>
+                <Link className="basket" to="/basket">Корзина ({this.props.orders.length >0 ? this.props.orders.length : '0'})</Link>
             </div>
         )
     }

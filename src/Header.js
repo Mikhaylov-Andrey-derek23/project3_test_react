@@ -8,7 +8,7 @@ class Header extends React.Component{
         return(
             <div className="Navigation">
                 <Nav/>
-                <Basket/>
+                <Basket orders={this.props.orders}/>
             </div>
         )
     }

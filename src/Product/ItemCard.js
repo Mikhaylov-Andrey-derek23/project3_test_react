@@ -2,6 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 class ItemCard extends React.Component{
+
+    addId(e){
+        this.props.addId(e.target.name)
+    }
+
     render(){
         return(
             <div className="itemCard">
@@ -18,7 +23,7 @@ class ItemCard extends React.Component{
                     )
                 }
                 </div>
-                <Link to={this.props.linkBasket}>Добавить в корзину</Link>
+                <button onClick={(e) => this.addId(e)} name={this.props.id}>Добавить в корзину</button>
                 
             </div>
         )
