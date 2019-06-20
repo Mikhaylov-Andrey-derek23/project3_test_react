@@ -13,7 +13,7 @@ class Basket extends React.Component{
     }
     componentDidMount(){
         setTimeout(()=>{
-            fetch('/api/user.json').then(answer=>{
+            fetch('api/user.json').then(answer=>{
                 return answer.json()
             }).then(respon =>{
                 this.setState(

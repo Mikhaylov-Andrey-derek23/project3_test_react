@@ -11,7 +11,7 @@ class Basket extends React.Component{
     }
     componentDidMount(){
         let orders = this.props.orders       
-        fetch('/api/user.json').then(data=>{
+        fetch('api/user.json').then(data=>{
             return data.json()
         }).then(respon=>{
             this.setState({
@@ -27,7 +27,7 @@ class Basket extends React.Component{
         }
         
         
-        fetch('/api/data.json').then(data=>{
+        fetch('api/data.json').then(data=>{
             return data.json()
         }).then(respon=>{
             let res = [];

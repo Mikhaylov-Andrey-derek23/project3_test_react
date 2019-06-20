@@ -12,7 +12,7 @@ class Catolog extends React.Component{
         }
     }
     componentDidMount(){
-        fetch('/api/data.json').then(data=>{
+        fetch('api/data.json').then(data=>{
             return data.json()
         }).then(respon=>{
             respon.data.forEach(val => {

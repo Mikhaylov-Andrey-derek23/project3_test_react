@@ -15,7 +15,7 @@ class CardsGood extends React.Component{
     componentDidMount(){
         const link = this.props.link;
         console.log(link)
-        fetch('/api/data.json').then(data=>{
+        fetch('../api/data.json').then(data=>{
             return data.json()
         }).then(respon=>{
             // respon.data.forEach(el => {

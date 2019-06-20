@@ -11,7 +11,7 @@ class  FormEmail extends React.Component{
         }
     }
     componentDidMount(){
-        fetch('/api/user.json').then(answer=>{
+        fetch('api/user.json').then(answer=>{
             return answer.json()
         }).then(respon =>{
             this.setState({
